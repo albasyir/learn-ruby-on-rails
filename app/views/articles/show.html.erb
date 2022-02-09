@@ -9,3 +9,12 @@ or
 <h1><%= @article.title %></h1>
 <p><%= @article.body %></p>
 
+<hr />
+<h3>Comments</h3>
+
+<%= render @article.comments %>
+
+<hr />
+<h3>Add Your Comment</h3>
+
+<%= render 'comments/form' %>
