@@ -9,6 +9,11 @@
     <%= form.text_area :body %>
   </p>
 
+  <div>
+    <%= form.label :status %>
+    <%= form.select :status, %w[public private archived] %>
+  </div>
+
   <p>
     <%= form.submit %>
   </p>
